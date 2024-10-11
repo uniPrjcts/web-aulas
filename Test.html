@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+    <script>
+        const handleChange = () => {
+            const color = document.querySelector(".cor").value;
+            document.body.style.backgroundColor = color;
+        }
+
+        const handleClick = () => {
+            event.preventDefault();
+            const nome = document.querySelector(".nome").value;
+            document.querySelector(".texto").innerText = "Parabéns " + nome;
+        }
+
+        window.onload = () => {
+            document.querySelector(".cor").addEventListener("change", handleChange);
+            document.querySelector(".enviar").addEventListener("click", handleClick);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <p class="texto">Escreva seu nome e selecione sua cor favorita.</p>
+        <form>
+            <label for="nome" class="lNome">Nome:</label>
+            <input type="text" class="nome">
+            <label for="cor" class="lCor">Cor:</label>
+            <input type="color" class="cor">
+            <button class="enviar">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
