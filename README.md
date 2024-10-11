@@ -1,4 +1,4 @@
-Table of Contents
+# Table of Contents
 
 - [Aula 01 – Introdução à Arquitetura Web: história e evolução](#aula-01-introdução-à-arquitetura-web-história-e-evolução)
    * [A Origem da World Wide Web](#a-origem-da-world-wide-web)
@@ -355,7 +355,7 @@ A arquitetura de aplicações web modernas é complexa e sofisticada, envolvendo
 
 • Backend: O que acontece nos bastidores para que o site ou aplicativo funcione (a parte invisível que processa e armazena dados).
 
-## Tendências e Desafios 
+## Tendências e Desafios
 
 A arquitetura web continua evoluindo, com o surgimento de novas tecnologias e desafios a serem enfrentados. A web está se tornando cada vez mais complexa e interconectada, exigindo soluções inovadoras e eficientes. Computação em Nuvem: A computação em nuvem está se tornando a norma, com serviços como AWS, Azure e Google Cloud oferecendo recursos escaláveis, flexibilidade e custos reduzidos para aplicações web. Inteligência Artificial: A inteligência artificial está sendo integrada à web, com aplicações como chatbots, assistentes virtuais e sistemas de recomendação, personalizando a experiência do usuário e otimizando o funcionamento das aplicações. Internet das Coisas: A Internet das Coisas (IoT) conecta dispositivos e sensores à web, gerando grandes volumes de dados e exigindo soluções de arquitetura web que suportem essa conectividade. Segurança: A segurança na web é um desafio constante, com a necessidade de proteger dados e sistemas contra ataques cibernéticos, garantindo a privacidade e a integridade das informações.
 
@@ -363,7 +363,7 @@ A arquitetura web continua evoluindo, com o surgimento de novas tecnologias e de
 
 • HTML não é uma linguagem de programação; é uma linguagem de marcação, usada para definir a estrutura do seu conteúdo.
 
-• HTML consiste de uma série de elementos, que você usa para delimitar ou agrupar diferentes partes do conteúdo para que ele apareça ou atue de determinada maneira.  
+• HTML consiste de uma série de elementos, que você usa para delimitar ou agrupar diferentes partes do conteúdo para que ele apareça ou atue de determinada maneira.
 
 • As tags anexas podem transformar uma palavra ou imagem num hiperlink, pode colocar palavras em itálico, pode aumentar ou diminuir a fonte e assim por diante.
 
@@ -373,11 +373,11 @@ A arquitetura web continua evoluindo, com o surgimento de novas tecnologias e de
 
 ## Servidor
 
-O endereço `http://127.0.0.1:5500/index.html` refere-se a um arquivo HTML (index.html) que está sendo servido localmente no seu computador. 
+O endereço `http://127.0.0.1:5500/index.html` refere-se a um arquivo HTML (index.html) que está sendo servido localmente no seu computador.
 
-Endereço `http://`: Este é o protocolo de comunicação usado, que neste caso é o HyperText Transfer Protocol (HTTP). Ele define as regras para a transferência de dados na web. 
+Endereço `http://`: Este é o protocolo de comunicação usado, que neste caso é o HyperText Transfer Protocol (HTTP). Ele define as regras para a transferência de dados na web.
 
- `127.0.0.1`:  Este é o endereço IP local, também conhecido como "localhost". Ele refere-se ao seu próprio computador. É usado para acessar serviços que estão sendo executados localmente. 
+ `127.0.0.1`:  Este é o endereço IP local, também conhecido como "localhost". Ele refere-se ao seu próprio computador. É usado para acessar serviços que estão sendo executados localmente.
 
 `5500`: Este é o número da porta. Em redes de computadores, uma porta é um ponto de comunicação. O número da porta é usado para especificar um serviço específico no seu computador. Neste caso, 5500 é a porta onde o servidor web está sendo executado.
 
@@ -387,7 +387,7 @@ Endereço `http://`: Este é o protocolo de comunicação usado, que neste caso 
 
     <p class="editor-note">Meu gato é muito rabugento</p>
 
-class: O nome do atributo. 
+class: O nome do atributo.
 
 "editor-note": O valor do atributo, que neste caso é editor-note. Este valor pode ser usado para aplicar estilos CSS específicos a este parágrafo ou para selecionar este elemento usando JavaScript.
 
@@ -407,7 +407,7 @@ Para utilizar uma palavra em negrito, por exemplo:
 
     <img src="imagens/firefox-icon.png" alt="Minha imagem de teste" />
 
-• Ele contém dois atributos, mas não há tag </img> de fechamento, e não há conteúdo interno. 
+• Ele contém dois atributos, mas não há tag </img> de fechamento, e não há conteúdo interno.
 
 • Isso acontece porque um elemento de imagem não envolve conteúdo para ter efeito em si mesmo.
 
@@ -429,7 +429,7 @@ Para utilizar uma palavra em negrito, por exemplo:
 </html> <!-- Fecha o elemento raiz do documento HTML -->
 ```
 
-• `<!DOCTYPE html>` — o doctype. É a parte inicial obrigatória do documento. Nas névoas do tempo, quando o HTML era novo (por volta de 1991/2), doctypes eram criados para agir como links para um conjunto de regras que a página HTML tinha que seguir para ser considerada um bom HTML, o que poderia significar checagem automática de erros e outras coisas úteis. No entanto, atualmente, eles não fazem muito sentido e são basicamente necessários apenas para garantir que o documento se comporte corretamente. 
+• `<!DOCTYPE html>` — o doctype. É a parte inicial obrigatória do documento. Nas névoas do tempo, quando o HTML era novo (por volta de 1991/2), doctypes eram criados para agir como links para um conjunto de regras que a página HTML tinha que seguir para ser considerada um bom HTML, o que poderia significar checagem automática de erros e outras coisas úteis. No entanto, atualmente, eles não fazem muito sentido e são basicamente necessários apenas para garantir que o documento se comporte corretamente.
 
 • `<html></html>` — o elemento `<html>`. Esse elemento envolve todo o conteúdo da página e às vezes é conhecido como o elemento raiz.
 
@@ -443,7 +443,7 @@ Para utilizar uma palavra em negrito, por exemplo:
 
 ## Cabeçalhos
 
-Os elementos de cabeçalhos permitem especificar que certas partes do seu conteúdo são títulos ou subtítulos. 
+Os elementos de cabeçalhos permitem especificar que certas partes do seu conteúdo são títulos ou subtítulos.
 
     <h1>Heading level 1</h1>
     <h2>Heading level 2</h2>
@@ -487,7 +487,7 @@ Como lista:
 
 ## Links
 
-Para adicionar um link, precisamos usar um elemento simples — <a> — "a" é a forma abreviada de "âncora". 
+Para adicionar um link, precisamos usar um elemento simples — <a> — "a" é a forma abreviada de "âncora".
 
     <a href="https://www.deinfo.uepg.br/"> <!-- Tag de abertura do hyperlink, 'href' especifica o destino do link -->
         DEINFO - UEPG <!-- Texto âncora que será exibido como link clicável - ->
@@ -527,9 +527,9 @@ Para adicionar um link, precisamos usar um elemento simples — <a> — "a" é a
 
 • Lista de definição: usada para listar termos e suas respectivas definições.
 
-• `<dl>` (Description List): Esta tag define a lista de definições. Ela é um contêiner para a lista de termos e descrições. O conteúdo desta tag será composto por elementos `<dt>` e `<dd>`. 
+• `<dl>` (Description List): Esta tag define a lista de definições. Ela é um contêiner para a lista de termos e descrições. O conteúdo desta tag será composto por elementos `<dt>` e `<dd>`.
 
-• `<dt>` (Definition Term): Esta tag é usada para especificar um termo na lista de definições. Cada termo é seguido por uma ou mais descrições. 
+• `<dt>` (Definition Term): Esta tag é usada para especificar um termo na lista de definições. Cada termo é seguido por uma ou mais descrições.
 
 • `<dd>` (Definition Description): Esta tag fornece a descrição ou definição do termo especificado pelo `<dt>` anterior. Pode haver várias descrições para um único termo, cada uma representada por uma tag `<dd>`.
 
@@ -550,7 +550,7 @@ Em HTML, citações podem ser representadas usando as tags `<blockquote>`, `<q>`
 
 • `<blockquote>`: Usada para citações em bloco, ou seja, citações longas que normalmente ocupam várias linhas. Essa tag geralmente renderiza a citação com uma indentação para destacá-la do resto do texto.
 
-• `<q>`: Usada para citações curtas, incorporadas diretamente no texto. Ela renderiza as citações com aspas automaticamente. 
+• `<q>`: Usada para citações curtas, incorporadas diretamente no texto. Ela renderiza as citações com aspas automaticamente.
 
 • `<cite>`: Usada para citar uma fonte ou referência de uma obra, geralmente renderizada em itálico pelo navegador.
 
@@ -560,7 +560,7 @@ Em HTML, citações podem ser representadas usando as tags `<blockquote>`, `<q>`
 </blockquote>
 <p>
     No artigo, o autor afirmou que <q cite="https://www.exemplo.com/artigo">o teste de software é essencial para garantir a qualidade do produto final</q>.
-</p> 
+</p>
 <p>Este conceito foi bem explicado em <cite>Software Engineering: A Practitioner's Approach</cite> por Roger S. Pressman.</p>
 ```
 
@@ -741,13 +741,13 @@ Formulários são sistemas de coletas de informações dos usuários. Eles permi
 
 - value: Valor pré-definido do campo.
 
-- required: Indica que o campo é obrigatório. 
+- required: Indica que o campo é obrigatório.
 
     <label for="name">Nome:</label>
     <input type="text" id="name" name="name" required />
     <input type="text" value="Por padrão, este elemento será preenchido com este texto " />
 
-• O elemento `<textarea>` é usado para criar uma área de texto que permite ao usuário inserir várias linhas de texto, como comentários ou descrições. 
+• O elemento `<textarea>` é usado para criar uma área de texto que permite ao usuário inserir várias linhas de texto, como comentários ou descrições.
 
 • rows e cols: Atributos que definem o número de linhas e colunas visíveis na área de texto.
 
@@ -758,7 +758,7 @@ Formulários são sistemas de coletas de informações dos usuários. Eles permi
 
 ## elemento `<button>`
 
-Permite que o usuário envie seus dados depois de preencher o formulário. 
+Permite que o usuário envie seus dados depois de preencher o formulário.
 
     <button type="submit">Enviar</button>
     <button type="reset">Limpar</button>
@@ -1142,8 +1142,8 @@ nav ul li a:hover {
 <main>
     <div id="pagina-sobre">
         <h2>Sobre</h2>
-        <p>Informações sobre o site e sua missão.</p> 
-    </div> 
+        <p>Informações sobre o site e sua missão.</p>
+    </div>
     </main>
 ```
 
@@ -1327,7 +1327,7 @@ Por exemplo, em elementos HTML, bloco ou `block` ocupa 100% da largura disponív
 
 ## Sintaxe
 
-• Value: influencia como os elementos são posicionados uns em relação aos outros e como ocupam espaço no layout. 
+• Value: influencia como os elementos são posicionados uns em relação aos outros e como ocupam espaço no layout.
 
 ### block
 
@@ -1364,7 +1364,7 @@ Por exemplo, em elementos HTML, bloco ou `block` ocupa 100% da largura disponív
 }
 ```
 
-### inline-block 
+### inline-block
 
 • Combina características dos elementos de bloco e em linha.
 
@@ -1464,15 +1464,15 @@ Por exemplo, em elementos HTML, bloco ou `block` ocupa 100% da largura disponív
 
 ## Position
 
-• Define o método de posicionamento de um elemento dentro do seu contêiner. 
+• Define o método de posicionamento de um elemento dentro do seu contêiner.
 
 • Existem 5 valores, que são: `static`, `fixed`, `sticky`, `relative` e `absolute`.
 
-• Por exemplo o `position: static`, alinha pelo canto superior esquerdo no corpo do documento. 
+• Por exemplo o `position: static`, alinha pelo canto superior esquerdo no corpo do documento.
 
 ### Static
 
-• Este elemento não aceita as propriedades auxiliares top, bottom, left e right. 
+• Este elemento não aceita as propriedades auxiliares top, bottom, left e right.
 
 ```css
 .static {
@@ -1483,7 +1483,7 @@ Por exemplo, em elementos HTML, bloco ou `block` ocupa 100% da largura disponív
 
 ### Fixed
 
-• Faz com que o elemento que recebeu esta propriedade não se mova na tela. Mesmo que uma página tenha rolamento (scroll). 
+• Faz com que o elemento que recebeu esta propriedade não se mova na tela. Mesmo que uma página tenha rolamento (scroll).
 
 ```css
 .fixed {
@@ -1626,7 +1626,7 @@ Por exemplo, em elementos HTML, bloco ou `block` ocupa 100% da largura disponív
 </html>
 ```
 
-### Float: inherit 
+### Float: inherit
 
 • Faz com que o elemento herde o valor de float de seu elemento pai.
 
@@ -1663,21 +1663,21 @@ Por exemplo, em elementos HTML, bloco ou `block` ocupa 100% da largura disponív
 
 ## Flexbox
 
-• Em vez de usar um float para criar layouts flutuando elementos para a esquerda ou para a direita, o flexbox permite que você crie layouts alinhando itens a um único eixo. 
+• Em vez de usar um float para criar layouts flutuando elementos para a esquerda ou para a direita, o flexbox permite que você crie layouts alinhando itens a um único eixo.
 
-• O eixo pode ser horizontal ou vertical. 
+• O eixo pode ser horizontal ou vertical.
 
 • É melhor usado para distribuir espaço para itens no mesmo eixo.
 
 • Para começar a usar o modelo Flexbox, primeiro é preciso definir um flex container (elemento pai).
 
-• Flexbox: aplicado ao elemento pai, que controla como os elementos filhos são organizados, alinhados e dispostos na página. 
+• Flexbox: aplicado ao elemento pai, que controla como os elementos filhos são organizados, alinhados e dispostos na página.
 
 • Ao definir display: flex em um elemento pai, ativa o modelo de layout Flexbox para organizar seus filhos.
 
-• O Flexbox organiza seus itens ao longo de dois eixos: o eixo principal (main axis) e o eixo cruzado (cross axis). 
+• O Flexbox organiza seus itens ao longo de dois eixos: o eixo principal (main axis) e o eixo cruzado (cross axis).
 
-• Por padrão, o eixo principal é horizontal (da esquerda para a direita), e o cruzado é vertical (de cima para baixo). 
+• Por padrão, o eixo principal é horizontal (da esquerda para a direita), e o cruzado é vertical (de cima para baixo).
 
 • No entanto, você pode alterar essa orientação usando a propriedade flex-direction.
 
@@ -1834,7 +1834,7 @@ Por exemplo, em elementos HTML, bloco ou `block` ocupa 100% da largura disponív
 
 • Display define como os elementos são exibidos (bloco, inline, etc.), position controla o posicionamento dos elementos (relativo, absoluto, fixo, etc.), float desloca elementos para a esquerda ou direita permitindo que outros elementos os rodeiem, e Flexbox é um sistema de layout que organiza elementos em uma direção (linha ou coluna) com alinhamento e distribuição flexível.
 
-• Todos são ferramentas para controlar a distribuição do layout na tela, e a escolha depende da necessidade específica da aplicação. Display e position são fundamentais para o comportamento básico e o posicionamento dos elementos, enquanto float era amplamente usado para layouts antes da popularização do Flexbox, que agora é preferido por sua facilidade e flexibilidade em criar layouts complexos de maneira mais intuitiva e responsiva. 
+• Todos são ferramentas para controlar a distribuição do layout na tela, e a escolha depende da necessidade específica da aplicação. Display e position são fundamentais para o comportamento básico e o posicionamento dos elementos, enquanto float era amplamente usado para layouts antes da popularização do Flexbox, que agora é preferido por sua facilidade e flexibilidade em criar layouts complexos de maneira mais intuitiva e responsiva.
 
 • A decisão de qual usar depende das exigências do design, da complexidade do layout e da necessidade de responsividade.
 
@@ -1862,7 +1862,7 @@ Por exemplo, em elementos HTML, bloco ou `block` ocupa 100% da largura disponív
 
 ## Itens de Grid
 
-• São os elementos filhos diretos do contêiner de grid. 
+• São os elementos filhos diretos do contêiner de grid.
 
 • Esses itens são organizados dentro do contêiner, e cada um deles pode ser posicionado em uma célula da grade.
 
@@ -2216,7 +2216,7 @@ Por exemplo, em elementos HTML, bloco ou `block` ocupa 100% da largura disponív
 
 ### animation-duration
 
-• Define o tempo total que a animação deve levar para completar um ciclo. 
+• Define o tempo total que a animação deve levar para completar um ciclo.
 
 ```css
 @keyframes change-background-duration {
@@ -2247,7 +2247,7 @@ Por exemplo, em elementos HTML, bloco ou `block` ocupa 100% da largura disponív
 
 ### animation-direction
 
-• Configura se a animação deve ou nao alternar a direção em cada execução durante a sequência ou voltar ao ponto inicial e se repetir. 
+• Configura se a animação deve ou nao alternar a direção em cada execução durante a sequência ou voltar ao ponto inicial e se repetir.
 
 • Define se a animação deve ser reproduzida na direção normal, inversa, alternativa ou alternativa inversa.
 
@@ -2300,7 +2300,7 @@ Por exemplo, em elementos HTML, bloco ou `block` ocupa 100% da largura disponív
 
 ### animation-timing-function
 
-• Controla a velocidade da animação ao longo do tempo, permitindo aceleração, desaceleração ou variações na velocidade. 
+• Controla a velocidade da animação ao longo do tempo, permitindo aceleração, desaceleração ou variações na velocidade.
 
 ```css
 @keyframes change-background-timing {
@@ -2358,7 +2358,7 @@ Por exemplo, em elementos HTML, bloco ou `block` ocupa 100% da largura disponív
 
 - both: Combina os comportamentos de forwards e backwards, aplicando os estilos do primeiro keyframe durante o atraso e mantendo os estilos do último keyframe após a animação.
 
-## Sugestões de uso nos keyframes 
+## Sugestões de uso nos keyframes
 
 1. Cores:
 
@@ -2430,7 +2430,7 @@ Por exemplo, em elementos HTML, bloco ou `block` ocupa 100% da largura disponív
 
 • Ela é uma forma conveniente de aplicar várias propriedades de animação de uma só vez, sem a necessidade de especificar cada uma delas individualmente.
 
-• A ordem das propriedades é importante e deve seguir a ordem: 
+• A ordem das propriedades é importante e deve seguir a ordem:
 
 
 `animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, e animation-play-state`.
@@ -2441,7 +2441,7 @@ Por exemplo, em elementos HTML, bloco ou `block` ocupa 100% da largura disponív
 @keyframes pulse {
      0% { background-color: #001F3F; }
      100% { background-color: #FF4136; }
-} 
+}
 .element { animation: pulse 5s infinite; }
 ```
 
@@ -2449,7 +2449,7 @@ Por exemplo, em elementos HTML, bloco ou `block` ocupa 100% da largura disponív
 
 ### fade-in
 
-• faz com que um elemento apareça gradualmente na tela, começando com uma opacidade de 0 (totalmente transparente) e aumentando para uma opacidade de 1 (totalmente visível) ao longo de um período de tempo. 
+• faz com que um elemento apareça gradualmente na tela, começando com uma opacidade de 0 (totalmente transparente) e aumentando para uma opacidade de 1 (totalmente visível) ao longo de um período de tempo.
 
 ```html
 <!DOCTYPE html>
@@ -2486,17 +2486,17 @@ Por exemplo, em elementos HTML, bloco ou `block` ocupa 100% da largura disponív
 
 ## Transições no CSS
 
-• A propriedade transition em CSS é usada para definir a transição de uma ou mais propriedades CSS. 
+• A propriedade transition em CSS é usada para definir a transição de uma ou mais propriedades CSS.
 
     .element {
         transition: <property> <duration> <timing-function> <delay>;
     }
 
-• property: A propriedade CSS que deve ser animada durante a transição (ex.: width, height, background- color, etc.). 
+• property: A propriedade CSS que deve ser animada durante a transição (ex.: width, height, background- color, etc.).
 
-• duration: A duração da transição, especificada em segundos (s) ou milissegundos (ms). 
+• duration: A duração da transição, especificada em segundos (s) ou milissegundos (ms).
 
-• timing-function: A função de temporização define como a transição será acelerada ou desacelerada durante sua execução (ex.: ease, linear, ease-in, ease-out, etc.). 
+• timing-function: A função de temporização define como a transição será acelerada ou desacelerada durante sua execução (ex.: ease, linear, ease-in, ease-out, etc.).
 
 • delay: Um atraso antes do início da transição, especificado em segundos (s) ou milissegundos (ms).
 
@@ -2540,7 +2540,7 @@ Por exemplo, em elementos HTML, bloco ou `block` ocupa 100% da largura disponív
 
 ## Variáveis
 
-• Variáveis são usadas para armazenar dados, como texto, números ou valores booleanos. 
+• Variáveis são usadas para armazenar dados, como texto, números ou valores booleanos.
 
 • São como caixas para guardar informações que serão usadas no seu código.
 
@@ -2586,7 +2586,7 @@ Operadores Lógicos: como "&&" (E), "||" (OU), "!" (NÃO) para realizar operaç�
 
 ## Estruturas de Controle
 
-• Instruções que controlam o fluxo do código. 
+• Instruções que controlam o fluxo do código.
 
 • Condicionais: if, else, switch
 
@@ -2637,7 +2637,7 @@ for (let i = 0; i < 5; i++) {
 </html>
 ```
 
-### Exemplo Simples 
+### Exemplo Simples
 
 ```html
 <!DOCTYPE html>
@@ -2668,7 +2668,7 @@ alert('Meu nome é ' + nome + ' e eu tenho ' + idade + ' anos.');
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
-        <title>Exemplo de Operadores de Comparação em 
+        <title>Exemplo de Operadores de Comparação em
             JavaScript</title>
         <script src="/scripts/script.js"></script></head>
     <body>
@@ -2715,9 +2715,9 @@ alert('Comparação de Valores:\n' +
 let condicao1 = true;
 let condicao2 = false;
 // Usando operadores lógicos
-let resultadoE = condicao1 && condicao2; // false, porque uma 
+let resultadoE = condicao1 && condicao2; // false, porque uma
 das condições é false
-let resultadoOu = condicao1 || condicao2; // true, porque uma 
+let resultadoOu = condicao1 || condicao2; // true, porque uma
 das condições é true
 let resultadoNao = !condicao1; // false, porque !true é false
 // Exibindo os resultados das operações lógicas em um alerta
@@ -2757,7 +2757,7 @@ function executarComparacoes() {
     let ehMaior = numero1 > numero2;
     // Verificando se o primeiro número é menor que o segundo
     let ehMenor = numero1 < numero2;
-    
+
     // Exibindo os resultados usando alertas
     alert('Comparação de Valores:\n' +
         numero1 + ' == ' + numero2 + ': ' + ehIgual + '\n' +
@@ -2767,11 +2767,11 @@ function executarComparacoes() {
 }
 ```
 
-# Aula 11 – JavaScript: funções e eventos 
+# Aula 11 – JavaScript: funções e eventos
 
 ## Funções
 
-• Funções são blocos de código projetados para realizar uma tarefa específica. 
+• Funções são blocos de código projetados para realizar uma tarefa específica.
 
 • Elas são úteis para organizar o código, reutilizar lógica e tornar o programa mais legível.
 
@@ -2957,7 +2957,7 @@ if (resposta) {
 • prompt(): Exibe uma caixa de diálogo que solicita ao usuário a entrada de dados. Retorna o texto inserido pelo usuário ou null se o usuário clicar em "Cancelar".
 
 ```js
-let nome = prompt("Qual é o seu 
+let nome = prompt("Qual é o seu
     nome?");
 if (nome) {
     alert("Olá, " + nome + "!");
@@ -3125,7 +3125,7 @@ function calcularDiferenca() {
 
 ## querySelector() e querySelectorAll()
 
-• Utilizam seletores CSS para selecionar elementos. 
+• Utilizam seletores CSS para selecionar elementos.
 
 • querySelector() retorna o primeiro elemento que corresponde ao seletor.
 
@@ -3203,7 +3203,7 @@ titulo2.setAttribute('id', 'novoTitulo’);
 ```js
 var paragrafo = document.querySelector('.paragrafo');
 var classeParagrafo = paragrafo.getAttribute('class');
-console.log(classeParagrafo); 
+console.log(classeParagrafo);
 ```
 
 • removeAttribute(): Remove um atributo do elemento.
@@ -3283,7 +3283,7 @@ titulo.addEventListener('dblclick', function() {
 // Adicionando um ouvinte de evento para o evento 'keydown' no documento
 document.addEventListener('keydown', function(event) {
     // Selecionando o parágrafo com id "mensagem"
-    var mensagemParagrafo = 
+    var mensagemParagrafo =
     document.getElementById('mensagem');
     // Mudando o conteúdo do parágrafo para mostrar a tecla pressionada
     mensagemParagrafo.innerText = 'Você pressionou a tecla: ' + event.key;
@@ -3315,13 +3315,13 @@ document.addEventListener('keydown', function(event) {
 // Selecionando a caixa de busca e o botão
 var caixaBusca = document.getElementById('caixaBusca');
 var botaoBusca = document.getElementById('botaoBusca');
-var resultadoBusca = 
+var resultadoBusca =
 document.getElementById('resultadoBusca');
 // Adicionando um ouvinte de evento de clique ao botão
 botaoBusca.addEventListener('click', function() {
     // Obtendo o valor digitado na caixa de busca
     var textoBusca = caixaBusca.value;
-    
+
     // Atualizando o parágrafo com o resultado da busca
     if (textoBusca.trim() !== "") {
         resultadoBusca.innerText = 'Você buscou por: ' + textoBusca;
@@ -3404,7 +3404,7 @@ titulo.style.fontSize = '30px';  // Aumenta o tamanho da fonte
 
 ## Manipulando Classes com classList
 
-• Às vezes, é mais eficiente adicionar ou remover classes CSS inteiras em vez de alterar estilos individuais. 
+• Às vezes, é mais eficiente adicionar ou remover classes CSS inteiras em vez de alterar estilos individuais.
 
 • Isso permite mudar múltiplos estilos de uma vez, definidos em uma folha de estilos.
 
@@ -3479,7 +3479,7 @@ function alternarClasse() {
     <head>
         <title>Exemplo de Tema Escuro</title>
         <!-- Link para o arquivo CSS externo -->
-        <link rel="stylesheet" type="text/css" 
+        <link rel="stylesheet" type="text/css"
             href="/Styles/styles.css">
     </head>
     <body>
@@ -3534,7 +3534,7 @@ function alternarTema() {
     <head>
         <title>Exemplo de Animação com DOM</title>
         <!-- Link para o arquivo CSS externo -->
-        <link rel="stylesheet" type="text/css" 
+        <link rel="stylesheet" type="text/css"
             href="/Styles/styles.css">
     </head>
     <body>
@@ -3577,7 +3577,7 @@ function alternarTema() {
 // Função para adicionar a classe 'animar' ao elemento com ID 'caixa'
 function animarCaixa() {
     const caixa = document.getElementById('caixa');
-    caixa.classList.toggle('animar'); // Alterna a classe 'animar' para iniciar 
+    caixa.classList.toggle('animar'); // Alterna a classe 'animar' para iniciar
     ou parar a animação
 }
 ```
@@ -3871,7 +3871,7 @@ console.log('Nova Profissão:', pessoa.profissao);
 delete pessoa.cidade;
 console.log('Cidade após remoção:', pessoa.cidade); // Deve exibir "undefined"
 // Exibir resultados na página
-document.getElementById('resultado').innerHTML = 
+document.getElementById('resultado').innerHTML =
     'Nome: ' + pessoa.nome + '<br>' +
     'Idade: ' + pessoa.idade + '<br>' +
     'Nova Profissão: ' + pessoa.profissao + '<br>' +
@@ -3892,9 +3892,9 @@ let escola = {
         numero: 123
     }
 };
-console.log(escola.turmas[1]); // Acessando o 2º elemento do 
+console.log(escola.turmas[1]); // Acessando o 2º elemento do
 array dentro do objeto
-console.log(escola.endereco.rua); // Acessando propriedade 
+console.log(escola.endereco.rua); // Acessando propriedade
 dentro de outro objeto
 ```
 
@@ -4288,7 +4288,7 @@ input:valid {
 
 ### HTMLInputElement
 
-• Representa um campo de entrada `<input>`. É um dos elementos mais comuns em formulários e pode ser usado para diferentes tipos de dados (texto, email, senha, etc.). 
+• Representa um campo de entrada `<input>`. É um dos elementos mais comuns em formulários e pode ser usado para diferentes tipos de dados (texto, email, senha, etc.).
 
 • Ele suporta várias validações embutidas:
 
@@ -4470,7 +4470,7 @@ form.addEventListener("submit", function(event) {
 
 1. JavaScript para fazer as requisições.
 
-2. XMLHttpRequest (ou Fetch API) rara comunicação com o servidor. Objeto de requisição. 
+2. XMLHttpRequest (ou Fetch API) rara comunicação com o servidor. Objeto de requisição.
 
 3. Dados de resposta no formato XML, JSON ou texto.
 
@@ -4484,7 +4484,7 @@ form.addEventListener("submit", function(event) {
 
 4. Os dados recebidos são usados para atualizar a página, sem recarregar.
 
-## XMLHttpRequest 
+## XMLHttpRequest
 
 ```js
 // Criando o objeto XMLHttpRequest em JavaScript
@@ -4495,7 +4495,7 @@ xhr.open("GET", "https://api.exemplo.com/dados", true);
 // Definindo o que acontece quando a resposta é recebida
 xhr.onload = function() {
     if (xhr.status == 200) { // Sucesso
-        console.log(JSON.parse(xhr.responseText)); // Parse dos 
+        console.log(JSON.parse(xhr.responseText)); // Parse dos
         dados JSON
     } else {
         console.error("Erro na requisição: " + xhr.status);
@@ -4517,7 +4517,7 @@ xhr.send();
 
 • Outros métodos HTTP menos comuns também podem ser usados, como PATCH (atualização parcial de recursos), HEAD (recupera os cabeçalhos sem o corpo da resposta), e OPTIONS (utilizado para consultar as opções disponíveis no servidor).
 
-### API de simulação 
+### API de simulação
 
 < https://www.jsonplaceholder.org/ >
 
@@ -4677,7 +4677,7 @@ function loadData() {
             });
             document.getElementById('dataList').innerHTML = output;
         } else {
-            document.getElementById('dataList').innerHTML = 'Erro ao carregar os 
+            document.getElementById('dataList').innerHTML = 'Erro ao carregar os
                 dados.';
         }
     };
@@ -4688,7 +4688,7 @@ function loadData() {
 }
 ```
 
-## Fetch API 
+## Fetch API
 
 • A Fetch API é uma interface moderna de JavaScript que facilita a realização de requisições assíncronas, substituindo o XMLHttpRequest como a principal maneira de interagir com APIs RESTful.
 
@@ -4894,7 +4894,7 @@ dados.forEach(dado => {
 });
 ```
 
-## Map - Extrair e exibir apenas um campo específico de cada item de um array de objetos JSON 
+## Map - Extrair e exibir apenas um campo específico de cada item de um array de objetos JSON
 
 ```json
 [
@@ -5068,7 +5068,7 @@ document.getElementById('formulario').addEventListener('submit', function(event)
     const link = document.createElement('a');
     link.href = url;
     link.download = 'dados.json';  // Nome do arquivo
-    document.body.appendChild(link); //adiciona um elemento (neste caso, um link) 
+    document.body.appendChild(link); //adiciona um elemento (neste caso, um link)
     link.click();  // Simula o clique no link para download
     // Remove o link temporário
     document.body.removeChild(link);
@@ -5227,13 +5227,13 @@ function filtrarLivros() {
 }
 ```
 
-# Aula 19 -  Autenticação e Autorização com JWT 
+# Aula 19 -  Autenticação e Autorização com JWT
 
 ● Para fazer requisições de alguns serviços ou acessar páginas específicas, você precisa se identificar de alguma forma, e essa identificação precisa ser segura e única.
 
 ● JWT é um padrão para representar dados como um objeto JSON de maneira compacta e segura, especialmente usado para autenticação em APIs.
 
-● O JWT (JSON Web Token) é uma forma de autenticação que permite que um servidor verifique a identidade de um usuário sem precisar armazenar informações sobre ele. 
+● O JWT (JSON Web Token) é uma forma de autenticação que permite que um servidor verifique a identidade de um usuário sem precisar armazenar informações sobre ele.
 
 ● Ele é um padrão aberto para representar dados de forma compacta e segura entre as partes.
 
@@ -5309,7 +5309,7 @@ Trocas de informações: podemos identificar se o conteúdo da assinatura foi al
 
 5. O servidor valida o JWT e autoriza o usuário a acessar os recursos.
 
-## Criar um JWT 
+## Criar um JWT
 
 A jsonwebtoken é uma biblioteca popular para trabalhar com JWTs no Node.js. Ela oferece métodos simples para:
 
@@ -5426,13 +5426,13 @@ fs.watchFile('dados.json', (curr, prev) => {
 {
     "id": 1,
     "username": "usuario1",
-    "email": 
+    "email":
     "usuario1@example.com",
     "role": "admin2"
 }
 ```
 
-### JWT e HTML 
+### JWT e HTML
 
 ```html
 <!DOCTYPE html>
@@ -5549,7 +5549,7 @@ Aplicações de fitness, como Strava ou Nike Run Club, usam JWT para autenticar 
 
 Google e Microsoft: Quando você se autentica no Google ou na Microsoft, eles geram um JWT que permite acesso a vários serviços (Gmail, Google Drive, Microsoft Office, OneDrive, etc.) sem precisar fazer login em cada um.
 
-Redes sociais como o Facebook também utilizam JWT em seus sistemas para permitir que o usuário acesse diversos serviços 
+Redes sociais como o Facebook também utilizam JWT em seus sistemas para permitir que o usuário acesse diversos serviços
 usando as mesmas credenciais.
 
 ## Vantagens e Desvantagens do JWT
@@ -5692,7 +5692,7 @@ window.onload = function() {
 // Função para salvar o nome no SessionStorage
 function saveName() {
     let nameInput = document.getElementById("name").value;
-    
+
     if (nameInput) {
         sessionStorage.setItem("userName", nameInput);  // Armazena o nome no SessionStorage
         displayGreeting();  // Atualiza a saudação com o nome salvo
@@ -5701,7 +5701,7 @@ function saveName() {
 // Função para exibir uma saudação com o nome armazenado no SessionStorage
 function displayGreeting() {
     let storedName = sessionStorage.getItem("userName");  // Recupera o nome do SessionStorage
-    
+
     if (storedName) {
         document.getElementById("greeting").textContent = "Olá, " + storedName + "! Seja bem-vindo.";
     } else {
@@ -5714,7 +5714,7 @@ window.onload = function() {
 };
 ```
 
-## Aplicações 
+## Aplicações
 
 ● Salvar Tema Escuro/Claro com LocalStorage;
 
@@ -5944,7 +5944,7 @@ Servidor como interface: O servidor Node.js expõe essa funcionalidade como uma 
 
 Mesmo banco de dados do exercício passado “meu_banco”:
 
-    npm install express 
+    npm install express
 
     mysql2 body-parser
 
@@ -6051,7 +6051,7 @@ app.listen(port, () => {
 });
 ```
 
-## Aplicações 
+## Aplicações
 
 ● Sistema de Cadastro de Usuários com Autenticação;
 
