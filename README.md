@@ -411,7 +411,7 @@ Para utilizar uma palavra em negrito, por exemplo:
 
 • Isso acontece porque um elemento de imagem não envolve conteúdo para ter efeito em si mesmo.
 
-• Comentário em HTML: <!-- -->
+• Comentário em HTML: `<!-- -->`
 
 ## Anatomia de um documento HTML
 
@@ -473,7 +473,7 @@ Listas de marcação sempre consistem em pelo menos 2 elementos. Os tipos mais c
 
 - Listas Ordenadas são para listas onde a ordem dos itens importa, como uma receita. Essas são envolvidas em um elemento `<ol>`.
 
-    <p> Os alunos de Engenharia de Software são inteligentes e esforçados... </p>
+        <p>Os alunos de Engenharia de Software são inteligentes e esforçados...</p>
 
 Como lista:
 
@@ -487,7 +487,7 @@ Como lista:
 
 ## Links
 
-Para adicionar um link, precisamos usar um elemento simples — <a> — "a" é a forma abreviada de "âncora".
+Para adicionar um link, precisamos usar um elemento simples — `<a>` — "a" é a forma abreviada de "âncora".
 
     <a href="https://www.deinfo.uepg.br/"> <!-- Tag de abertura do hyperlink, 'href' especifica o destino do link -->
         DEINFO - UEPG <!-- Texto âncora que será exibido como link clicável - ->
@@ -721,7 +721,7 @@ Formulários são sistemas de coletas de informações dos usuários. Eles permi
 
 • O atributo action define o local (uma URL) em que os dados coletados do formulário devem ser enviados.
 
-• O method de atributo define qual o método HTTP para enviar os dados (ele pode ser " GET " ou " POST ");
+• O atributo method define qual o método HTTP para enviar os dados (ele pode ser " GET " ou " POST ");
 
 ## Elementos `<label>`, `<input>`, e `<textarea>`
 
@@ -797,7 +797,7 @@ Permite que o usuário envie seus dados depois de preencher o formulário.
 
 ### Visualizar formulários
 
-• < https://formspree.io/forms >
+<https://formspree.io/forms>
 
 ### Botão Buscar
 
@@ -891,14 +891,14 @@ Mostra um texto de instrução temporário em um campo de entrada.
 
     <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário">
 
-## Min e Max
+## min e Max
 
 Estabelecem valores mínimos e máximos para campos de entrada numéricos.
 
     <label for="age">Idade:</label>
     <input type="number" id="age" name="age" min="1" max="100">
 
-## Set
+## step
 
 Define o incremento para campos de entrada numéricos.
 
@@ -927,19 +927,19 @@ CSS (Cascading Style Sheets) é uma linguagem de estilo que permite controlar a 
 
 • Inline CSS: dentro de uma tag HTML usando o atributo style.
 
-• Internal CSS: dentro de um bloco <style> no cabeçalho de um documento HTML.
+• Internal CSS: dentro de um bloco `<style>` no cabeçalho de um documento HTML.
 
 • External CSS: em um arquivo CSS separado, vinculado ao documento HTML.
 
-## Criar folha de estilo
+## Criando uma folha de estilo
 
 • Dentro da pasta styles, crie um arquivo “estilo.css”
 
-• Após salvar como estilo.css precisamos colocar o arquivo em nosso arquivo HTML, porque é ele quem vai carregar o CSS
+• Após salvar como `estilo.css` precisamos colocar o arquivo em nosso arquivo HTML, porque é ele quem vai carregar o CSS
 
 • O CSS sozinho não faz site! E é com tags de referência que você avisa ao HTML que existe um arquivo de estilo para ele, veja:
 
-    <link rel=”stylesheet” type=”text/css” href=”estilo.css”>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
 
 ## Propriedades mais básicas de CSS
 
@@ -1007,7 +1007,7 @@ h1 {
 </ul>
 ```
 
-## Elementos básicos do CSS
+## Classes e IDs
 
 Uma classe no CSS é um método para aplicar estilos a um ou mais elementos HTML de maneira consistente e reutilizável.
 
@@ -1030,7 +1030,7 @@ Uma classe no CSS é um método para aplicar estilos a um ou mais elementos HTML
 
 ### ID
 
-• IDs para aplicar estilos específicos a elementos HTML.
+IDs para aplicar estilos específicos a elementos HTML.
 
 ```html
 <link rel="stylesheet" type="text/css" href="styles/estilo.css">
@@ -1321,11 +1321,13 @@ main p {
 
 A propriedade `display` define como um elemento se comporta em relação aos outros na página web. Essa propriedade influencia a maneira como o elemento é exibido, afetando sua aparência e a forma como ele se ajusta ao fluxo do conteúdo.
 
-`display` possui diversos valores que permitem criar layouts complexos e organizados, ajustando o posicionamento e o fluxo dos elementos.
+O `display` possui diversos valores que permitem criar layouts complexos e organizados, ajustando o posicionamento e o fluxo dos elementos.
 
-Por exemplo, em elementos HTML, bloco ou `block` ocupa 100% da largura disponível (títulos, parágrafos); em linha ou `inline` ocupam apenas o espaço necessário para exibir o seu conteúdo (imagens, links).
+Por exemplo, bloco ou `block` ocupa 100% da largura disponível (títulos, parágrafos); em linha ou `inline` ocupam apenas o espaço necessário para exibir o seu conteúdo (imagens, links).
 
 ## Sintaxe
+
+    display: value;
 
 • Value: influencia como os elementos são posicionados uns em relação aos outros e como ocupam espaço no layout.
 
@@ -1915,7 +1917,7 @@ Por exemplo, em elementos HTML, bloco ou `block` ocupa 100% da largura disponív
 
 • em: Medida relativa ao tamanho da fonte do elemento pai.
 
-• Rem (root em): Medida relativa ao tamanho da fonte raiz `<html>`, mais consistente que em quando usado em documentos inteiros.
+• Rem (root em): Medida relativa ao tamanho da fonte raiz `<html>`, mais consistente quando usado em documentos inteiros.
 
 ```css
 .container {
@@ -2107,6 +2109,7 @@ Por exemplo, em elementos HTML, bloco ou `block` ocupa 100% da largura disponív
 ```
 
 1 / 1: O item começa na primeira linha e na primeira coluna.
+
 2 / 3: O item termina na segunda linha e na terceira coluna.
 
 ## Todas as propriedades da grade CSS
@@ -2566,12 +2569,6 @@ Arrays: uma coleção de elementos que podem ser de diferentes tipos.
 
 Objetos: representam entidades com propriedades e métodos.
 
-Números: 10, 3.14
-Strings: "Olá, mundo!"
-Booleanos: true, false
-Arrays: [1, 2, 3, 4]
-Objetos: { nome: "João", idade: 25 }
-
 ## Operadores
 
 • Operadores são símbolos que permitem realizar operações com dados, como adição, subtração, multiplicação, divisão, comparação, etc. Eles são usados para manipular e combinar os dados que você armazena nas variáveis.
@@ -2957,8 +2954,7 @@ if (resposta) {
 • prompt(): Exibe uma caixa de diálogo que solicita ao usuário a entrada de dados. Retorna o texto inserido pelo usuário ou null se o usuário clicar em "Cancelar".
 
 ```js
-let nome = prompt("Qual é o seu
-    nome?");
+let nome = prompt("Qual é o seu nome?");
 if (nome) {
     alert("Olá, " + nome + "!");
 } else {
@@ -3142,8 +3138,8 @@ var todosOsParagrafos = document.querySelectorAll('.paragrafo'); alert(todosOsPa
 • Utilizada para acessar ou alterar o conteúdo de um elemento que foi selecionado.
 
 ```js
-primeiroParagrafo.textContent
-primeiroParagrafo.textContent = 'Engenharia de Software'
+primeiroParagrafo.textContent // O valor é o valor de p
+primeiroParagrafo.textContent = 'Engenharia de Software' // Alterando o valor
 ```
 
 ### querySelectorAll() é um Array
@@ -3164,7 +3160,7 @@ Alterar o conteúdo:
 
 • getElementById(): Seleciona um elemento com base no seu atributo id.
 
-• getElementsByClassNam e(): Seleciona todos os elementos que têm uma determinada classe.
+• getElementsByClassName(): Seleciona todos os elementos que têm uma determinada classe.
 
 • getElementsByTagName() : Seleciona todos os elementos de um determinado tipo de tag.
 
@@ -3283,8 +3279,7 @@ titulo.addEventListener('dblclick', function() {
 // Adicionando um ouvinte de evento para o evento 'keydown' no documento
 document.addEventListener('keydown', function(event) {
     // Selecionando o parágrafo com id "mensagem"
-    var mensagemParagrafo =
-    document.getElementById('mensagem');
+    var mensagemParagrafo = document.getElementById('mensagem');
     // Mudando o conteúdo do parágrafo para mostrar a tecla pressionada
     mensagemParagrafo.innerText = 'Você pressionou a tecla: ' + event.key;
 });
@@ -3313,14 +3308,13 @@ document.addEventListener('keydown', function(event) {
 
 ```js
 // Selecionando a caixa de busca e o botão
-var caixaBusca = document.getElementById('caixaBusca');
-var botaoBusca = document.getElementById('botaoBusca');
-var resultadoBusca =
-document.getElementById('resultadoBusca');
+const caixaBusca = document.getElementById('caixaBusca');
+const botaoBusca = document.getElementById('botaoBusca');
+const resultadoBusca = document.getElementById('resultadoBusca');
 // Adicionando um ouvinte de evento de clique ao botão
 botaoBusca.addEventListener('click', function() {
     // Obtendo o valor digitado na caixa de busca
-    var textoBusca = caixaBusca.value;
+    const textoBusca = caixaBusca.value;
 
     // Atualizando o parágrafo com o resultado da busca
     if (textoBusca.trim() !== "") {
@@ -3534,8 +3528,7 @@ function alternarTema() {
     <head>
         <title>Exemplo de Animação com DOM</title>
         <!-- Link para o arquivo CSS externo -->
-        <link rel="stylesheet" type="text/css"
-            href="/Styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="/Styles/styles.css">
     </head>
     <body>
         <h1>Exemplo de Animação Usando DOM</h1>
@@ -3577,8 +3570,7 @@ function alternarTema() {
 // Função para adicionar a classe 'animar' ao elemento com ID 'caixa'
 function animarCaixa() {
     const caixa = document.getElementById('caixa');
-    caixa.classList.toggle('animar'); // Alterna a classe 'animar' para iniciar
-    ou parar a animação
+    caixa.classList.toggle('animar'); // Alterna a classe 'animar' para iniciar ou parar a animação
 }
 ```
 
@@ -3793,6 +3785,9 @@ for (let i = 0; i < frutas.length; i++) {
 frutas.forEach(function(fruta) {
     console.log(fruta);
 });
+
+// Sintaxes
+
 for (inicialização; condição; incremento) {
     // Código a ser executado em cada iteração
 }
@@ -3801,6 +3796,7 @@ let frutas = ['Maçã', 'Banana', 'Laranja'];
 frutas.forEach(function(fruta) {
     console.log(fruta);
 });
+
 array.forEach(callback(element, index, array), thisArg);
 ```
 
@@ -3814,7 +3810,7 @@ array.forEach(callback(element, index, array), thisArg);
 
 • thisArg (opcional): Valor a ser usado como this quando a função callback for executada.
 
-### Atividade
+### Exemplo
 
 ```html
 <!DOCTYPE html>
@@ -3892,10 +3888,8 @@ let escola = {
         numero: 123
     }
 };
-console.log(escola.turmas[1]); // Acessando o 2º elemento do
-array dentro do objeto
-console.log(escola.endereco.rua); // Acessando propriedade
-dentro de outro objeto
+console.log(escola.turmas[1]); // Acessando o 2º elemento do array dentro do objeto
+console.log(escola.endereco.rua); // Acessando propriedade dentro de outro objeto
 ```
 
 • Também é possível criar arrays de objetos:
@@ -4119,6 +4113,11 @@ Utilizamos a expressão regular (regex) para garantir que o formato do email sej
 
 `|` Representa uma escolha entre dois padrões (OR). Exemplo: (a|b) corresponde a "a" ou "b".
 
+
+```js
+let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+```
+
 `^` e `$` delimitam o início e o fim da string.
 
 `[^\s@]+` significa que qualquer sequência de caracteres (exceto espaços ou o caractere @) deve aparecer antes do @.
@@ -4130,10 +4129,6 @@ Utilizamos a expressão regular (regex) para garantir que o formato do email sej
 `\.` é o ponto literal antes do domínio final (como .com).
 
 `[^\s@]+` valida que o domínio final (como "com" ou "org") seja composto por caracteres válidos.
-
-```js
-let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-```
 
 ### Validação de Email
 
@@ -4460,9 +4455,7 @@ form.addEventListener("submit", function(event) {
 
 • O XMLHttpRequest (XHR) é o objeto principal que facilita a comunicação assíncrona com o servidor.
 
-• Enviar e receber informações em uma variedade de formatos, incluindo JSON, XML, HTML
-
-• Muito utilizado para fazer requisições de API hoje em dia.
+• Envia e recebe informações em uma variedade de formatos, incluindo JSON, XML, HTML.
 
 ## Funcionamento do AJAX
 
@@ -4470,7 +4463,7 @@ form.addEventListener("submit", function(event) {
 
 1. JavaScript para fazer as requisições.
 
-2. XMLHttpRequest (ou Fetch API) rara comunicação com o servidor. Objeto de requisição.
+2. XMLHttpRequest (ou Fetch API) para comunicação com o servidor compondo o objeto de requisição.
 
 3. Dados de resposta no formato XML, JSON ou texto.
 
@@ -4489,14 +4482,15 @@ form.addEventListener("submit", function(event) {
 ```js
 // Criando o objeto XMLHttpRequest em JavaScript
 var xhr = new XMLHttpRequest();
+
 // Configurando a requisição: método, URL e se é assíncrona
 xhr.open(method, url, async);
+
 xhr.open("GET", "https://api.exemplo.com/dados", true);
 // Definindo o que acontece quando a resposta é recebida
 xhr.onload = function() {
     if (xhr.status == 200) { // Sucesso
-        console.log(JSON.parse(xhr.responseText)); // Parse dos
-        dados JSON
+        console.log(JSON.parse(xhr.responseText)); // Parse dos dados JSON
     } else {
         console.error("Erro na requisição: " + xhr.status);
     }
@@ -4519,7 +4513,7 @@ xhr.send();
 
 ### API de simulação
 
-< https://www.jsonplaceholder.org/ >
+<https://www.jsonplaceholder.org/>
 
 ### Exemplo
 
@@ -4564,7 +4558,7 @@ Onreadystatechange: indica mudanças no estado da requisição
 
 • Padrões que a internet utiliza no momento de comunicação do servidor com o servidor:
 
-< https://www.webfx.com/web-development/glossary/http-status-codes/ >
+<https://www.webfx.com/web-development/glossary/http-status-codes/>
 
 ## Eventos
 
@@ -4638,7 +4632,7 @@ xhr.onreadystatechange = function (){
     }
 }
 xhr.open("GET", "https://jsonplaceholder.org/posts/1", true);
-    xhr.send();
+xhr.send();
 ```
 
 ### Exemplo - Users
@@ -4677,8 +4671,7 @@ function loadData() {
             });
             document.getElementById('dataList').innerHTML = output;
         } else {
-            document.getElementById('dataList').innerHTML = 'Erro ao carregar os
-                dados.';
+            document.getElementById('dataList').innerHTML = 'Erro ao carregar os dados.';
         }
     };
     xhr.onerror = function() {
@@ -4858,7 +4851,7 @@ console.log(objetoPessoa.nome); // Maria
 
 ```js
 // Usa fetch() para carregar o arquivo JSON externo
-fetch('dadosj.json') .then(response => response.json())  // Converte a resposta para JSON
+fetch('dadosj.json').then(response => response.json())  // Converte a resposta para JSON
 ```
 
 ## Método Map
@@ -5828,7 +5821,7 @@ Adicionar Nome:
 
 Exibir Nomes:
 
-● A função displayNames() abre um cursor para percorrer os itens armazenados no banco de dados e exibe os nomes na lista <ul> no HTML.
+● A função displayNames() abre um cursor para percorrer os itens armazenados no banco de dados e exibe os nomes na lista `<ul>` no HTML.
 
 Persistência:
 
