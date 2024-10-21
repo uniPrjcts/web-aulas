@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 20px;
+        }
+        .container>img {
+            max-width: 250px;
+        }
+        .fade-in-fade-out {
+            animation: sumir-suave 2s;
+        }
+
+        @keyframes sumir-suave {
+            0% {
+                opacity: 100%;
+            }
+            50% {
+                opacity: 0%;
+            }
+            100% {
+                opacity: 100%;
+            }
+        }
+    </style>
+    <script>
+        const newImg = "https://images.macrumors.com/t/LVN_aChVPsdeYdf2WbIxW1whyJw=/800x0/article-new/2024/08/macos-sequoia-hidden-wallpaper.jpg";
+
+        const handleClick = () => {
+            const imgOld = document.querySelector(".imagem");
+
+            imgOld.classList.add("fade-in-fade-out");
+            setTimeout(function() {
+                imgOld.src = newImg;
+            }, 1000);
+        }
+
+        window.onload = () => {
+            document.querySelector(".enviar").addEventListener("click", handleClick);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="https://pbs.twimg.com/media/GA2UgAQXIAAiwvq.jpg" alt="" class="imagem">
+        <button class="enviar">Enviar</button>
+    </div>
+</body>
+</html>
